@@ -39,8 +39,6 @@ for msg in mid.tracks[1]:
 		else:
 			notes[timing_us] = [msg.note]
 
-print(notes)
-
 final_bytes = bytes()
 
 for ts in notes:
@@ -51,6 +49,6 @@ for ts in notes:
 			raw_map = raw_map + 2**i
 	int_map = raw_map.to_bytes(2, 'little')
 	final_bytes = final_bytes + timestamp + int_map 
-	
+
 with open('songs.dat', 'wb') as f:
 	f.write(final_bytes)
