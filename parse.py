@@ -51,46 +51,6 @@ for ts in notes:
 			raw_map = raw_map + 2**i
 	int_map = raw_map.to_bytes(2, 'little')
 	final_bytes = final_bytes + timestamp + int_map 
-
-#### DECODE ####
-# in microseconds
-SOLENOID_DELAY = 1000
-
+	
 with open('songs.dat', 'wb') as f:
 	f.write(final_bytes)
-
-def decode(data):
-	bits = []
-	for x in data:
-		for y in [
-			x&2**0!=0,
-			x&(2**1)!=0,
-			x&(2**2)!=0,
-			x&(2**3)!=0,
-			x&(2**4)!=0,
-			x&(2**5)!=0,
-			x&(2**6)!=0,
-			x&(2**7)!=0 ]:
-			bits.append(y)
-	return bits
-
-actions = []
-
-with open('songs.dat', 'rb', buffering=0) as f:
-	while ts_byte:= f.read(4):
-		timestamp = int.from_bytes(ts_byte, 'little')
-		pin_map = decode(f.read(2))
-		actions.append((timestamp, pin_map))
-		actions.append((timestamp + SOLENOID_DELAY, [False]*16))
-
-import time
-
-start = time.monotonic_ns()
-curr = 0
-
-while len(actions) > 0:
-	dat = actions.pop(0)
-	while curr < dat[0]*1000:
-		curr = time.monotonic_ns() - start
-	print(curr)
-	print(dat[1])
