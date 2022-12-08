@@ -22,3 +22,21 @@
 	3. go to 1
 
 
+## Musical notes:
+Starts at Santa, then back along string, then front of other string and back
+- 1L: E8
+- 1R: D#8
+- 2L: G8
+- 2R: C#8
+- 3L: A8
+- 3R: B7
+- 4L: G#8
+- 4R: A7
+- 5L: F#8
+- 5R: G7
+- 6L: G#7
+- 6R: F#7
+- 7L: E7
+- 7R: D7
+- 8L: A6
+- 8R: D8
