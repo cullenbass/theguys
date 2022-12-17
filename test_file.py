@@ -1,13 +1,8 @@
 import time
-import gc
-import micropython
-from machine import Pin
-
-led = Pin(25, Pin.OUT)
-solenoid =  Pin(0, Pin.OUT)
+import winsound
 
 # in microseconds
-SOLENOID_DELAY = 100000
+SOLENOID_DELAY = 10000
 
 def decode(data):
 	bits = []
@@ -39,19 +34,16 @@ with open('songs.dat', 'rb', buffering=0) as f:
 		timestamp = int.from_bytes(ts_byte, 'little')
 		pin_map = decode(f.read(2))
 		actions.append((timestamp, pin_map))
-		actions.append((timestamp + SOLENOID_DELAY, [False]*16))
+		# actions.append((timestamp + SOLENOID_DELAY, [False]*16))
+
 time.sleep(2)
-start = time.ticks_us()
+
+start = time.time_ns()/1000
 print('start ticking: {}'.format(start))
 curr = 0
-micropython.mem_info()
-print('-----------------------------')
-print('Initial free: {} allocated: {}'.format(gc.mem_free(), gc.mem_alloc()))
 while len(actions) > 0:
 	dat = actions.pop(0)
 	while curr < dat[0]:
-		curr = time.ticks_us() - start
+		curr = time.time_ns()/1000 - start
 	print("Difference: {}".format(curr-dat[0]))
-	solenoid.toggle()
-	led.toggle()
-
+	winsound.Beep(440,10)

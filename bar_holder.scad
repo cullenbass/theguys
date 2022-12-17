@@ -26,11 +26,11 @@ module stand() {
 
 union() {
     stand();
-    translate([E2E_BAR-SCREW_D,0,0])
+    translate([E2E_BAR-BAR_HOLE_SIZE,0,0])
     stand();
     translate([0,-FELT_SIZE/2,0]) {
-        cube([E2E_BAR-SCREW_D,FELT_SIZE,THIN_THICK]);
-        translate([SCREW_D/2,FELT_SIZE/2-THIN_THICK/2,total_height/2])
-        cube([E2E_BAR-2*SCREW_D, THIN_THICK, total_height/2]);
+        cube([E2E_BAR-BAR_HOLE_SIZE,FELT_SIZE,THIN_THICK]);
+        translate([BAR_HOLE_SIZE/2,FELT_SIZE/2-THIN_THICK/2,total_height/2])
+        cube([E2E_BAR-2*BAR_HOLE_SIZE, THIN_THICK, total_height/2]);
     }
 }

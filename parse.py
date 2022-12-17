@@ -2,7 +2,7 @@ from mido import MidiFile, tick2second
 from collections import OrderedDict
 import os
 
-mid = MidiFile('demo2.mid')
+mid = MidiFile('01DeckTheHalls.mid')
 
 ticks_per_beat = mid.ticks_per_beat
 
@@ -32,10 +32,10 @@ print('ticks_per_beat: {} tempo: {}'.format(ticks_per_beat, tempo))
 msg_delta = 0
 for msg in mid.tracks[1]:
 	msg_delta = msg_delta + msg.time
-	timing_us = int((msg_delta)/ticks_per_beat)*tempo
 	if msg.type == 'note_on':
+		timing_us = int((msg_delta*tempo)/ticks_per_beat)
 		if timing_us in notes:
-			notes[timing_us] = notes[timing_us].append(msg.note)
+			notes[timing_us].append(msg.note)
 		else:
 			notes[timing_us] = [msg.note]
 
