@@ -34,8 +34,8 @@ Starts at Santa, then back along string, then front of other string and back
 - 4R: A7
 - 5L: G7
 - 5R: F#8
-- 6L: F#7
-- 6R: G#7
+- 6L: G#7
+- 6R: F#7
 - 7L: E7
 - 7R: D7
 - 8L: D8
