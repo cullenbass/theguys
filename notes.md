@@ -32,14 +32,14 @@ Starts at Santa, then back along string, then front of other string and back
 - 3R: B7
 - 4L: G#8
 - 4R: A7
-- 5L: F#8
-- 5R: G7
-- 6L: G#7
-- 6R: F#7
+- 5L: G7
+- 5R: F#8
+- 6L: F#7
+- 6R: G#7
 - 7L: E7
 - 7R: D7
-- 8L: A6
-- 8R: D8
+- 8L: D8
+- 8R: A6
 
 # Bar Measurements in mm
 1. 53.72

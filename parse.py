@@ -9,10 +9,10 @@ ticks_per_beat = mid.ticks_per_beat
 tempo = -1
 
 # 16 entry list with 0-15 being note value for each thing
-PIN_MAPPING = [60,62,64,65,
-	0,0,0,0,
-	0,0,0,0,
-	0,0,0,0,
+PIN_MAPPING = [81,86,88,90,
+	91,92,93,95,
+	97,98,99,100,
+	102,103,104,105,
 ]
 
 # grab numbers for timestamp determination
