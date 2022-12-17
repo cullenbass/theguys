@@ -42,7 +42,6 @@ actions = []
 with open('00.dat', 'rb', buffering=0) as f:
 	while ts_byte:= f.read(4):
 		timestamp = int.from_bytes(ts_byte, 'little')
-		# f.read(1)
 		pin_map = decode(f.read(2))
 		actions.append((timestamp, pin_map))
 		# actions.append((timestamp + SOLENOID_DELAY, [False]*16))
