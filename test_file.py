@@ -17,7 +17,6 @@ def play(dat):
 	print(dat)
 	for i, note in enumerate(dat):
 		if note:
-			print(i)
 			return winsound.Beep(mapping[i], 100)
 
 
@@ -39,21 +38,21 @@ def decode(data):
 
 actions = []
 
-with open('00.dat', 'rb', buffering=0) as f:
-	while ts_byte:= f.read(4):
-		timestamp = int.from_bytes(ts_byte, 'little')
-		pin_map = decode(f.read(2))
-		actions.append((timestamp, pin_map))
-		# actions.append((timestamp + SOLENOID_DELAY, [False]*16))
+for filename in sorted(filter(lambda x: '.dat' in x, os.listdir())):
+	with open(filename, 'rb', buffering=0) as f:
+		while ts_byte:= f.read(4):
+			timestamp = int.from_bytes(ts_byte, 'little')
+			pin_map = decode(f.read(2))
+			actions.append((timestamp, pin_map))
+			# actions.append((timestamp + SOLENOID_DELAY, [False]*16))
 
-time.sleep(2)
-
-start = time.time_ns()/1000
-print('start ticking: {}'.format(start))
-curr = 0
-while len(actions) > 0:
-	dat = actions.pop(0)
-	while curr < dat[0]:
-		curr = time.time_ns()/1000 - start
-	print("Difference: {}".format(curr-dat[0]))
-	play(dat[1])
+	start = time.time_ns()/1000
+	print('start ticking: {}'.format(start))
+	curr = 0
+	while len(actions) > 0:
+		dat = actions.pop(0)
+		while curr < dat[0]:
+			curr = time.time_ns()/1000 - start
+		print("Difference: {}".format(curr-dat[0]))
+		play(dat[1])
+	time.sleep(2)
