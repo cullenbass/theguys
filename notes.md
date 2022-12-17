@@ -32,12 +32,12 @@ Starts at Santa, then back along string, then front of other string and back
 - 3R: B7
 - 4L: G#8
 - 4R: A7
-- 5L: G7
-- 5R: F#8
+- 5L: F#8
+- 5R: G7
 - 6L: G#7
 - 6R: F#7
-- 7L: E7
-- 7R: D7
+- 7L: D7
+- 7R: E7
 - 8L: D8
 - 8R: A6
 
@@ -50,7 +50,7 @@ Starts at Santa, then back along string, then front of other string and back
 6. 65.70
 7. 67.48
 8. 69.94
-9. 73.22
+9. 73.22 
 10. 78.02
 11. 78.22
 12. 82.52
