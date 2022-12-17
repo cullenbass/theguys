@@ -14,7 +14,6 @@ mapping = [
 mapping = [int(x) for x in mapping]
 
 def play(dat):
-	print(dat)
 	for i, note in enumerate(dat):
 		if note:
 			return winsound.Beep(mapping[i], 100)
@@ -44,7 +43,6 @@ for filename in sorted(filter(lambda x: '.dat' in x, os.listdir())):
 			timestamp = int.from_bytes(ts_byte, 'little')
 			pin_map = decode(f.read(2))
 			actions.append((timestamp, pin_map))
-			# actions.append((timestamp + SOLENOID_DELAY, [False]*16))
 
 	start = time.time_ns()/1000
 	print('start ticking: {}'.format(start))
