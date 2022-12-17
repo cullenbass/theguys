@@ -50,7 +50,7 @@ while True:
 			for i in range(len(dat[1])):
 				pins[i].value(dat[1][i])
 			led.toggle()
-		time.sleep(3)
+		time.sleep(2)
 		gc.collect()
 
 
