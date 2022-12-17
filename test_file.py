@@ -1,12 +1,30 @@
 import time
 import winsound
+import os
+import threading
 
-# in microseconds
-SOLENOID_DELAY = 10000
+# test file only
+mapping = [
+	1760, 2349.32, 2637.02, 2959.96,
+	3135.96, 3322.44, 3520.00, 3951.07,
+	4434.92, 4698.63, 4978.03, 5274.04,
+	5919.91, 6271.93, 6644.88, 7040.00
+]
+
+mapping = [int(x) for x in mapping]
+
+def play(dat):
+	print(dat)
+	for i, note in enumerate(dat):
+		if note:
+			print(i)
+			return winsound.Beep(mapping[i], 100)
+
 
 def decode(data):
 	bits = []
 	for x in data:
+		print(x)
 		for y in [
 			x&2**0!=0,
 			x&(2**1)!=0,
@@ -15,23 +33,16 @@ def decode(data):
 			x&(2**4)!=0,
 			x&(2**5)!=0,
 			x&(2**6)!=0,
-			x&(2**7)!=0,
-			x&(2**8)!=0,
-			x&(2**9)!=0,
-			x&(2**10)!=0,
-			x&(2**11)!=0,
-			x&(2**12)!=0,
-			x&(2**13)!=0,
-			x&(2**14)!=0,
-			x&(2**15)!=0 ]:
+			x&(2**7)!=0,]:
 			bits.append(y)
 	return bits
 
 actions = []
 
-with open('songs.dat', 'rb', buffering=0) as f:
+with open('00.dat', 'rb', buffering=0) as f:
 	while ts_byte:= f.read(4):
 		timestamp = int.from_bytes(ts_byte, 'little')
+		# f.read(1)
 		pin_map = decode(f.read(2))
 		actions.append((timestamp, pin_map))
 		# actions.append((timestamp + SOLENOID_DELAY, [False]*16))
@@ -46,4 +57,4 @@ while len(actions) > 0:
 	while curr < dat[0]:
 		curr = time.time_ns()/1000 - start
 	print("Difference: {}".format(curr-dat[0]))
-	winsound.Beep(440,10)
+	play(dat[1])
