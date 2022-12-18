@@ -5,6 +5,7 @@
 2. Ring, Christmas Bells (147 BPM)
 3. We Wish You a Merry Christmas (136 BPM)
 4. Joy to the World (87 BPM)
+5. Jolly Old Saint Nicholas (93 BPM)
 
 # Hardware
 ## Data format

@@ -1,5 +1,4 @@
 import time
-import winsound
 import os
 import threading
 
@@ -13,10 +12,21 @@ mapping = [
 
 mapping = [int(x) for x in mapping]
 
+try:
+    import winsound
+except ImportError:
+    import os
+    def playsound(frequency,duration):
+        #apt-get install beep
+        os.system('play -n synth %s sin %s' % (duration/1000, frequency))
+else:
+    def playsound(frequency,duration):
+        winsound.Beep(frequency,duration)
+
 def play(dat):
 	for i, note in enumerate(dat):
 		if note:
-			return winsound.Beep(mapping[i], 100)
+			return playsound(mapping[i], 100)
 
 
 def decode(data):
