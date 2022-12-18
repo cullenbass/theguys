@@ -4,6 +4,7 @@
 1. Deck the Halls (165 BPM)
 2. Ring, Christmas Bells (147 BPM)
 3. We Wish You a Merry Christmas (136 BPM)
+4. Joy to the World (87 BPM)
 
 # Hardware
 ## Data format
