@@ -14,7 +14,8 @@
 9. Little Drummer Boy (69 BPM) (4:30)
 10. Bring a Torch, Jeanette Isabella (106 BPM) (5:13)
 11. Santa Clause is Coming to Town (160 BPM) (5:38)
-12. Away in a Manger (88 BPM) (6:23)
+12. Away in a Manger (87 BPM) (6:25)
+13. Silent Night (106 BPM) (7:01)
 
 # Hardware
 ## Data format
