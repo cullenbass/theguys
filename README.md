@@ -12,6 +12,7 @@
 7. The 12 Days of Christmas (136 BPM) (3:05)
 8. The First Noel (79 BPM) (3:30)
 9. Little Drummer Boy (69 BPM) (4:30)
+10. Bring a Torch, Jeanette Isabella () (5:13)
 
 # Hardware
 ## Data format

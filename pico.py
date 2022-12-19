@@ -9,7 +9,7 @@ led = Pin(25, Pin.OUT)
 pins = [Pin(x, Pin.OUT) for x in range(16)]
 
 # in microseconds
-SOLENOID_DELAY = 100000
+SOLENOID_DELAY = 10000
 
 def decode(data):
 	bits = []

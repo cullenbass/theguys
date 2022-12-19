@@ -1,12 +1,13 @@
-E2E_BAR =97.72;
+E2E_BAR =53.72;
 BAR_HOLE_SIZE = 4.5;
 BAR_THICK = 1;
 FELT_SIZE = 15;
 FELT_THICK = 3;
+STAND_BOTTOM = 25;
 SCREW_H = 12;
 SCREW_D = 2.7;
-SOLENOID_HEIGHT = 8;
-SOLENOID_STROKE = 4.5;
+SOLENOID_HEIGHT = 33;
+SOLENOID_STROKE = 6;
 THIN_THICK = 1.2;
 
 total_height = SOLENOID_STROKE + THIN_THICK + SOLENOID_HEIGHT - FELT_THICK - .5;
@@ -28,12 +29,16 @@ module stand() {
 wall_height = 10;
 union() {
     stand();
-    translate([E2E_BAR-BAR_HOLE_SIZE,0,0])
-    stand();
-    translate([0,-FELT_SIZE/2,0])
-    cube([E2E_BAR-BAR_HOLE_SIZE,FELT_SIZE, THIN_THICK]);
+    translate([E2E_BAR-BAR_HOLE_SIZE,0,0]) {
+        stand(); 
+        cylinder(h=THIN_THICK, d=STAND_BOTTOM);
+    }
+    cylinder(h=THIN_THICK, d=STAND_BOTTOM);
+    translate([0,(-STAND_BOTTOM)/2,0]) {
+        cube([E2E_BAR-BAR_HOLE_SIZE,STAND_BOTTOM, THIN_THICK]);
+    }
     if (total_height > 15) {
-        translate([od_to_id+BAR_HOLE_SIZE/2,-THIN_THICK/2,wall_height])
-        cube([E2E_BAR-od_to_id-BAR_HOLE_SIZE,THIN_THICK, total_height-wall_height]);
+        translate([0,FELT_SIZE/2-THIN_THICK,wall_height])
+        cube([E2E_BAR-BAR_HOLE_SIZE,THIN_THICK, total_height-wall_height]);
     }
 }
