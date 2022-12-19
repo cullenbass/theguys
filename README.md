@@ -1,12 +1,15 @@
 # theguys
 
+[Reference Video](https://www.youtube.com/watch?v=TSuWbGYCaJ4)
+
 ## Song info
 1. Deck the Halls (165 BPM)
 2. Ring, Christmas Bells (147 BPM)
 3. We Wish You a Merry Christmas (136 BPM)
 4. Joy to the World (87 BPM)
 5. Jolly Old Saint Nicholas (93 BPM)
-6. Oh Come, Oh Come, Emmanuel (118 BPM)
+6. Oh Come, Oh Come, Emmanuel (118 BPM) 
+7. The 12 Days of Christmas (136 BPM) (3:05)
 
 # Hardware
 ## Data format
