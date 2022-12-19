@@ -13,7 +13,8 @@
 8. The First Noel (79 BPM) (3:30)
 9. Little Drummer Boy (69 BPM) (4:30)
 10. Bring a Torch, Jeanette Isabella (106 BPM) (5:13)
-11. Santa Clause is Coming to Town (161 BPM) (5:38)
+11. Santa Clause is Coming to Town (160 BPM) (5:38)
+12. Away in a Manger (88 BPM) (6:23)
 
 # Hardware
 ## Data format
