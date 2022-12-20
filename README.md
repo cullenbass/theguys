@@ -18,7 +18,7 @@
 13. Silent Night (106 BPM) (7:01)
 14. O Tannenbaum (98 BPM) (7:42)
 15. It Came Upon a Midnight Clear (129.5 BPM) (8:14)
-16. Hark, the Herald Angels Sing ( BPM) (9:03)
+16. Hark, the Herald Angels Sing (106 BPM) (9:03)
 
 # Hardware
 ## Data format
