@@ -16,6 +16,7 @@
 11. Santa Clause is Coming to Town (160 BPM) (5:38)
 12. Away in a Manger (87 BPM) (6:25)
 13. Silent Night (106 BPM) (7:01)
+14. O Tannenbaum (98 BPM) (7:42)
 
 # Hardware
 ## Data format
