@@ -19,6 +19,7 @@
 14. O Tannenbaum (98 BPM) (7:42)
 15. It Came Upon a Midnight Clear (129.5 BPM) (8:14)
 16. Hark, the Herald Angels Sing (106 BPM) (9:03)
+17. Angels We Have Heard on High ( BPM) (9:51)
 
 # Hardware
 ## Data format
