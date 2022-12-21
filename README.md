@@ -20,7 +20,8 @@
 15. It Came Upon a Midnight Clear (129.5 BPM) (8:14)
 16. Hark, the Herald Angels Sing (106 BPM) (9:03)
 17. Angels We Have Heard on High (97 BPM) (9:51)
-18. Jingle Bells ( BPM) (10:45)
+18. Jingle Bells (110 BPM) (10:45)
+19. What Child is This? (164 BPM) (11:22)
 
 # Hardware
 ## Data format
