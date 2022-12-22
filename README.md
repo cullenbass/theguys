@@ -29,6 +29,7 @@
 24. O Come All Ye Faithful (138 BPM) (14:57)
 25. Good King Winceslas (157 BPM) (15:35)
 26. Come, Little Children (159 BPM) 16:02
+27. O Holy Night ( BPM) (16:32)
 
 # Hardware
 ## Data format
