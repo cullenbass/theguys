@@ -24,6 +24,7 @@
 19. What Child is This? (164 BPM) (11:22)
 20. Hallelujah Chorus (165 BPM) (12:00)
 21. We Three Kings (117 BPM) (12:47)
+22. O Little Town of Bethlehem (99 BPM) (13:38)
 
 # Hardware
 ## Data format
