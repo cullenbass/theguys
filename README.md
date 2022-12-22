@@ -22,6 +22,8 @@
 17. Angels We Have Heard on High (97 BPM) (9:51)
 18. Jingle Bells (110 BPM) (10:45)
 19. What Child is This? (164 BPM) (11:22)
+20. Hallelujah Chorus (165 BPM) (12:00)
+21. We Three Kings (117 BPM) (12:47)
 
 # Hardware
 ## Data format
