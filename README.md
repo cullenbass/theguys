@@ -25,6 +25,9 @@
 20. Hallelujah Chorus (165 BPM) (12:00)
 21. We Three Kings (117 BPM) (12:47)
 22. O Little Town of Bethlehem (99 BPM) (13:38)
+23. God Rest Ye Merry Gentlemen (154 BPM) (14:22)
+24. O Come All Ye Faithful (138 BPM) (14:57)
+25. Good King Wincelaus (158 BPM) (15:35)
 
 # Hardware
 ## Data format
