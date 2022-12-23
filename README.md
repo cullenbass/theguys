@@ -30,6 +30,7 @@
 25. Good King Winceslas (157 BPM) (15:35)
 26. Come, Little Children (158 BPM) 16:02
 27. O Holy Night (82 BPM) (16:32)
+18. I Saw Three Ships (98 BPM) (17:43)
 
 # Hardware
 ## Data format
