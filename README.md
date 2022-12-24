@@ -30,7 +30,8 @@
 25. Good King Winceslas (157 BPM) (15:35)
 26. Come, Little Children (158 BPM) 16:02
 27. O Holy Night (82 BPM) (16:32)
-18. I Saw Three Ships (98 BPM) (17:43)
+28. Here We Come, A'Caroling (195 BPM) (17:43)
+29. I Saw Three Ships ( BPM) (18:08)
 
 # Hardware
 ## Data format
